@@ -1,4 +1,4 @@
-#include <iostream.h>
+#include <iostream>
 using namespace std;
 #define size 10
 int stack[size];
@@ -9,11 +9,9 @@ void display(){
      cout<<"\nmemory underflow. nothing to display";
      return ;
     }
-    int temp=top;
     for(int i=top;i>=0;i--){
         cout<<"\nelement "<<i<<" is "<<stack[i];
     };
-    cout<<"\nelement to delete : "<<temp;
 }
 
 void push(){
@@ -25,7 +23,7 @@ void push(){
     cout<<"\nenter element to push : ";
     cin>>val;
     stack[++top]=val;
-    cout<<"\n value inserted in stack";
+    cout<<"\nvalue inserted in stack";
 }
 
 void pop(){
